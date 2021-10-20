@@ -155,7 +155,7 @@ extension PanViewControllerAble where Self: UIViewController
         }
     }
     
-    fileprivate var containerView: UIView{
+    public var containerView: UIView{
         get{
             return Holder.containerView
         }set{
