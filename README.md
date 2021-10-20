@@ -5,6 +5,11 @@
 PanControllerHeight is designed to present a sheet ViewController easily and control ViewController height with pangesture.
 
 If you want to present SheetVC from MainVC, you can using this library like code example
+## Demo:
+![panControllerHeight](https://user-images.githubusercontent.com/40600827/138031457-e5a66cc2-299f-429c-8733-fe40195fdafd.gif)
+
+
+
 ## Step:
 ### Step1: You have to call configurePanSetting(viewController:defaultHeight:) to init setting default height and max height at MainController
 
