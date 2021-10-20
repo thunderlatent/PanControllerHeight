@@ -246,6 +246,7 @@ extension PanViewControllerAble where Self: UIViewController
         setDefauleHeight(height: defaultHeight)
         setMaxHeight(height: maxHeight)
         resetHolder()
+        vc.view.backgroundColor = .clear
         configureDimmedView(viewController: vc)
         configureContainerView(viewController: vc)
         configureDragIndicatorView(viewController: vc)
