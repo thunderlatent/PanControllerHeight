@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol PanViewControllerAble where Self: UIViewController{
+public protocol PanViewControllerAble where Self: UIViewController{
     
     func presentPanViewController(viewController vc: UIViewController)
     func configurePanSetting(viewController vc: UIViewController, defaultHeight: CGFloat, maxHeight: CGFloat)
@@ -227,7 +227,7 @@ extension PanViewControllerAble where Self: UIViewController
     
     /// 推送出新的UIViewController
     /// - Parameter vc: 要被推送出的UIViewController
-    func presentPanViewController(viewController vc: UIViewController)
+    public func presentPanViewController(viewController vc: UIViewController)
     {
         vc.modalTransitionStyle = .crossDissolve
         vc.modalPresentationStyle = .overCurrentContext
@@ -241,7 +241,7 @@ extension PanViewControllerAble where Self: UIViewController
     ///   - vc: 被推送出的視圖控制器
     ///   - defaultHeight: 設定預設高度
     ///   - maxHeight: 設定最大高度
-    func configurePanSetting(viewController vc: UIViewController, defaultHeight: CGFloat, maxHeight: CGFloat)
+    public func configurePanSetting(viewController vc: UIViewController, defaultHeight: CGFloat, maxHeight: CGFloat)
     {
         setDefauleHeight(height: defaultHeight)
         setMaxHeight(height: maxHeight)
@@ -253,7 +253,7 @@ extension PanViewControllerAble where Self: UIViewController
     }
     
     ///推送出ContainerView，必須要在ViewDidAppear內被呼叫
-    func presentContainerViewWithAnimation() {
+    public func presentContainerViewWithAnimation() {
         showDimmedViewAnimation()
         UIViewPropertyAnimator(duration: 0.3, curve: .easeIn) {
             self.containerViewBottomConstraint?.constant = 0
