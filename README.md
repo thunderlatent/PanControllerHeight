@@ -6,12 +6,21 @@ PanControllerHeight is designed to present a sheet ViewController easily and con
 
 If you want to present SheetVC from MainVC, you can using this library like code example
 ## Step:
-Step1: You have to call configurePanSetting(viewController:defaultHeight:) to init setting default height and max height at MainController
+### Step1: You have to call configurePanSetting(viewController:defaultHeight:) to init setting default height and max height at MainController
 
-Step2: Call presentContainerViewWithAnimation() at viewDidAppear(_:) to show sheet view.
+### Step2: Call presentContainerViewWithAnimation() at viewDidAppear(_:) to show sheet view.
 
 ## Requirements
 - iOS 10.0+
+
+## Installation
+### Swift Package Manager
+```swift
+dependencies: [
+    .package(url: "https://github.com/thunderlatent/PanControllerHeight", .upToNextMajor(from: "1.0.0"))
+]
+```
+
 
 ## Code Example :
 ```swift
